@@ -53,13 +53,18 @@ class AkeebasubsControllerSubscriptions extends F0FController
 
 	public function publish()
 	{
+                $app= JFactory::getApplication();
+                $app->enqueueMessage("Please go in edit view to control the activation state (what you clicked it's not a toggle button)",'error');
 		$this->noop();
 	}
 
 	public function unpublish()
 	{
+                $app= JFactory::getApplication();
+                $app->enqueueMessage("Please go in edit view to control the activation state (what you clicked it's not a toggle button)",'error');
 		$this->noop();
 	}
+
 
 	public function noop()
 	{
